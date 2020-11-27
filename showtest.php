@@ -40,7 +40,7 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['Product'];?></center></td>
     <td><center><?php echo $Result['Price'];?></center></td>
     <td><center><?php echo $Result['Amout'];?></center></td>
-    <td><center><?php echo $sum = $Result['Price'] * $Result['Amount'];?></center></td>
+    <td><center><?php echo $sum = $Result['Price'] * $Result['Amout'];?></center></td>
 <?php
 }
 ?>

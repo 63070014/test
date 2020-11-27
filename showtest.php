@@ -40,7 +40,7 @@ while($Result = mysqli_fetch_array($res))
     <tr>
       <td><center><?php echo $Result['Product'];?></center></td>
       <td><center><?php echo $Result['Price'];?></center></td>
-      <td><center><?php echo $Result['Amount'];?></center></td>
+      <td><center><?php echo $Result['Amout'];?></center></td>
       <td><center><?php echo $Result['Total'];?></center></td>
       <td><?php echo '<a href="delete.php?id='.$Result['Id'].'">
       Delete</a>'?></td>

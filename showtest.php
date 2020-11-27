@@ -49,6 +49,8 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
+  <td><?php echo '<a href="delete.php?id='.$Result['Id'].' class="btn btn-success mb-3">
+      Delete</a>'?></td>
 <a href="insert.html" class="btn btn-success mb-3">Add+</a>
 <?php
 mysqli_close($conn);

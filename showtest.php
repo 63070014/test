@@ -42,12 +42,13 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['Price'];?></center></td>
     <td><center><?php echo $Result['Amout'];?></center></td>
     <td><center><?php echo $sum = $Result['Price'] * $Result['Amout'];?></center></td>
-    <td><center><a href="delete.html"><input type="submit" value="Delete"  class="btn btn-danger"></a></center></td>
+    <td><center><a href="delete.php"><input type="submit" value="Delete"  class="btn btn-danger"></a></center></td>
 
 <?php
 }
 ?>
 </table>
+<a href="insert.html" class="btn btn-success mb-3">Add+</a>
 <?php
 mysqli_close($conn);
 ?>

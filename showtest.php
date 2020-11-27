@@ -37,6 +37,7 @@ while($Result = mysqli_fetch_array($res))
     $sum = 0
 ?>
   <tr>
+    <td><center><?php echo $Result['Product'];?></center></td>
     <td><center><?php echo $Result['Price'];?></center></td>
     <td><center><?php echo $Result['Amount'];?></center></td>
     <td><center><?php echo $sum = $Result['Price'] * $Result['Amount'];?></center></td>

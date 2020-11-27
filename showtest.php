@@ -42,7 +42,7 @@ while($Result = mysqli_fetch_array($res))
       <td><center><?php echo $Result['Price'];?></center></td>
       <td><center><?php echo $Result['Amout'];?></center></td>
       <td><center><?php echo $Result['Total'];?></center></td>
-      <td><?php echo '<a href="delete.php?id='.$Result['Id'].' clas="btn">
+      <td><?php echo '<a href="delete.php?id='.$Result['Id'].' class="btn">
       Delete</a>'?></td>
     </tr>
 <?php
